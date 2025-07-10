@@ -1,4 +1,5 @@
 This HTML file demonstrates a basic Holy Grail layout using semantic elements such as <header>, <nav>, <main>, <section>, <aside>, and <footer>.
+
 It was created as part of Week 02 of the WDD 130: Web Fundamentals course at BYU-Idaho.
 
 The layout includes:
