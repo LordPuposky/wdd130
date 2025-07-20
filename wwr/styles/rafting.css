@@ -36,7 +36,6 @@ h2 {
     color: var(--primary-color);
 }
 
-/* HERO CONTENEDOR */
 .hero {
     position: relative;
     width: 100%;
@@ -48,7 +47,6 @@ h2 {
     display: block;
 }
 
-/* Top overlay with title */
 .hero-title-overlay {
     position: absolute;
     top: 10px;
@@ -68,7 +66,6 @@ h2 {
     margin: 0;
 }
 
-/* Yellow overlay INSIDE the image */
 .hero-yellow-overlay {
     position: absolute;
     bottom: 0;
@@ -79,7 +76,6 @@ h2 {
     z-index: 2;
 }
 
-/* Content inside yellow block */
 .hero-article {
     display: flex;
     justify-content: space-between;
@@ -94,10 +90,19 @@ h2 {
     height: auto;
     border: 3px solid white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    float: right;
 }
 
 .hero-article p {
     color: var(--accent1-color);
     font-size: 1.05rem;
     line-height: 1.5;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia a img {
+    text-decoration: none;
 }
