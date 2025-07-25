@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,32 @@
     <title>About Us - White Water Rafting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-    <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
+<header>
+    <div class="header-grid">
+        <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="nav-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
-    </header>
+    </div>
+</header>
     <main>
         <div class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image">
             <div class="hero-title-overlay">
                 <h1>White Water Rafting Company</h1>
-            </div>    
+            </div>
             <div class="hero-yellow-overlay">
                 <article class="hero-article">
                     <img src="images/happy-client.jpg" alt="Happy Client">
@@ -41,33 +47,66 @@
             </div>
         </div>
 
-
-
-
-        <section>
+        <section class="history-section">
             <h2>History</h2>
-            <p>Founded in 2010 by outdoor enthusiasts, our company has grown from a small family operation to one of the
-                most respected rafting outfitters in the region. We pride ourselves on our safety record and commitment
-                to environmental stewardship.</p>
+                <div class="history-content">
+                    <div class="history-text-left">
+                        <p>Founded in 2010 by a team of outdoor enthusiasts and whitewater experts,
+                            White Water Rafting Company began as a small family-run operation on the
+                            roaring rivers of Cundinamarca. What started with just two rafts and a passion
+                            for adventure has grown into one of South America’s most trusted rafting outfitters.
+                            Our journey has been fueled by an unwavering commitment to safety, environmental stewardship,
+                            and delivering unforgettable experiences that push boundaries while respecting nature’s power.</p>
+                    </div>
+                    
+                    <img <img src="images/Ourbegginings.webp" alt="Our rafting team in 2010" class="history-image">
+                    
+                    <div class="history-text-right">
+                        <p>Over a decade of excellence, we’ve pioneered safety protocols now adopted industry-wide,
+                            with our certified guides leading over 2,000 expeditions without a major incident.
+                            As proud members of the International Rafting Federation, we combine thrills with
+                            responsibility 5% of every trip funds local river conservation, and since 2018,
+                            we’ve operated 100% plastic-free. Our trips don’t just showcase nature’s beauty;
+                            they actively protect it for future adventurers.</p>
+                    </div>
+                </div>
         </section>
 
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="Rafting Adventure 1">
-            <img src="images/rafting2.jpg" alt="Rafting Adventure 2">
-            <img src="images/rafting3.jpg" alt="Rafting Adventure 3">
-            <img src="images/rafting4.jpg" alt="Rafting Adventure 4">
-            <img src="images/rafting5.jpg" alt="Rafting Adventure 5">
-        </section>
+        <section class="adventures">
+    <h2>Adventure Awaits You!</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/rafting1.jpg" alt="Rafting en el Río Negro">
+                <figcaption>Black River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting2.jpg" alt="Magdalena Adventure">
+                <figcaption>Magdalena Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting3.jpg" alt="Apulo Rapids">
+                <figcaption>Apulo Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting4.jpg" alt="Sumapaz Challenge">
+                <figcaption>Sumapaz Challenge</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting5.jpg" alt="La Vieja Express">
+                <figcaption>La Vieja Express</figcaption>
+            </figure>
+        </div>
+</section>
+
     </main>
 
     <footer>
-        <p>©2025 | White Water Rafting | Yesid Romero</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Facebook" width="36" height="36"></a>
-            <a href="https://x.com"><img src="images/X.webp" alt="X" width="35" height="35"></a>
-            <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" width="40" height="40"></a>
-        </nav>
+        <p>©2025 White Water Rafting | Yesid Romero</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Facebook" width="36" height="36"></a>
+                <a href="https://x.com"><img src="images/X.webp" alt="X" width="35" height="35"></a>
+                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" width="40" height="40"></a>
+            </nav>  
     </footer>
 </body>
 
