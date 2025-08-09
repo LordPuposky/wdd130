@@ -370,3 +370,456 @@ footer a:hover {
 .social-icons img:hover {
     transform: scale(1.1);
 }
+
+/* New styles for home page */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(195, 237, 11);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 2.0rem;
+    text-align: center;
+    width: 90%;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: rgba(5, 90, 5, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0;
+}
+
+.hero h1 {
+    transition: all 0.3s ease;
+}
+
+
+.hero h1:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+.newsletter {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 250px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 60px auto;
+    align-items: center;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--secondary-color); /* Naranja (#f4a261) */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes redondeados */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    background-color: #e76f51; /* Naranja más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.purpose img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.purpose {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+.purpose:hover {
+    transform: translateY(-5px);
+}
+
+.offerings {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.offerings img {
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter:
+        drop-shadow(0 2px 4px rgba(0,0,0,0.1))
+        hue-rotate(10deg);
+}
+
+.offerings:hover {
+    transform: translateY(-5px);
+}
+
+.offerings h3 {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+}
+
+.offerings p {
+    font-size: 1rem;
+    color: var(--accent1-color);
+    line-height: 1.5;
+}
+
+/* New styles for trips page */
+.trips-hero {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    filter: brightness(0.8) contrast(1.1);
+}
+
+.trips-hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    width: 90%;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right,
+                rgba(5, 90, 5, 0.7),
+                rgba(244, 162, 97, 0.7));
+    border-radius: 10px;
+}
+
+.trips-hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    z-index: 1;
+}
+
+.trips-hero h1 {
+    z-index: 2;
+}
+
+.hero h1 {
+    transition: all 0.3s ease;
+}
+
+
+.trips-hero h1:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.trip-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.trip-card-content {
+    padding: 20px;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.trip-card p {
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.difficulty-beginner {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.difficulty-intermediate {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.difficulty-expert {
+    background-color: #F44336;
+    color: white;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    margin: 15px;
+    color: var(--primary-color);
+}
+
+.trip-card p {
+    margin: 0 15px 15px;
+}
+
+.trip-card ul {
+    margin: 15px;
+    padding-left: 20px;
+}
+
+.book-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.trip-table {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th, .trip-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.wireframe-link {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para la sección de comparación */
+.trip-table {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    overflow-x: auto; /* Para responsive en móviles */
+}
+
+.trip-table h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+}
+
+.trip-table h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 15px auto 0;
+}
+
+/* Estilos para la tabla */
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.trip-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: var(--accent1-color);
+}
+
+.trip-table tr:last-child td {
+    border-bottom: none;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trip-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.trip-table a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.trip-table a:hover {
+    background-color: #e76f51;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trip-table td:nth-child(3) {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.trip-table td:nth-child(3):first-letter {
+    text-transform: uppercase;
+}
+

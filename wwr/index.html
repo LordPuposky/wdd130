@@ -1,47 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Yesid Romero | WDD 130</title>
-    <meta name="description" content="Yesid Romero's WDD 130 project site.
-                Learning to build responsive, user-centered websites with purpose.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to White Water Rafting - Your adventure starts here!">
     <meta name="author" content="Yesid Romero">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home - White Water Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="assignments/">Academic Projects</a>
-            <a href="wwwr/">Software Portfolio</a>
-        </nav>
+        <div class="header-grid">
+            <img src="images/logo.png" alt="Rafting Company Logo" class="logo">
+            <nav>
+                <ul class="nav-flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Yesid Romero | WDD 130</h1>
-        <img src="images/Yotrabajo.jpg" alt="Yesid Romero profile photo smiling and working" width="200">
-        <p>Welcome! I'm Yesid Romero, a passionate web developer, lifelong learner,
-            and a purpose-driven professional. After years of experience in sales leadership,
-            I chose to reinvent myself through web development and now specialize in building
-            responsive, accessible, and meaningful websites.
+        <div class="hero">
+            <img src="images/home-hero.jpg" alt="Exciting rafting adventure" class="hero-image">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+        </div>
 
-            I believe technology should serve people, not the other way around. My work blends
-            technical skill with human-centered design, aiming to create digital experiences that
-            are both functional and inspiring.
+        <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
 
-            Whether you're here to explore my projects, collaborate on a vision, or simply connect
-            I'm glad you stopped by. Let's build something with purpose. </p>        
+        <section class="cta-grid">
+            <div class="cta-content">
+                <h2>Ready for Adventure?</h2>
+                <p>Explore our exciting trips and book your next rafting experience today!</p>
+                <a href="trips.html" class="cta-button">View Trips</a>
+            </div>
+            <div class="cta-image">
+                <img src="images/cta-rafting.jpg" alt="Group enjoying rafting">
+            </div>
+        </section>
+
+        <section class="home-grid">
+            <div class="purpose">
+                <img src="images/purpose-icon.jpg" alt="Purpose icon">
+                <h3>Our Purpose</h3>
+                <p>To provide unforgettable rafting experiences while preserving nature.</p>
+            </div>
+            <div class="offerings">
+                <img src="images/offerings-icon.jpg" alt="Offerings icon">
+                <h3>What We Offer</h3>
+                <p>From beginner to expert levels, we have trips for everyone.</p>
+            </div>
+        </section>
     </main>
-    <aside>
-            <h2>Colombia</h2>
-            <img src="images/colombia.jpg" alt="Colombian landscape with mountains and greenery">
-            <p>Colombia is a diverse country in South America, known for its beautiful mountains, coffee plantations, rich culture, and warm people. From the Andes to the Caribbean coast, Colombia offers vibrant cities and breathtaking landscapes.</p>
-        </aside>
+
     <footer>
-        <p>©2025 ↑ Yesid Romero ↑ bogota, Colombia</p>
+        <p>©2025 White Water Rafting | Yesid Romero</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Facebook" width="24" height="24"></a>
+                <a href="https://x.com"><img src="images/X.webp" alt="X" width="25" height="25"></a>
+                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" width="28" height="28"></a>
+            </nav>  
     </footer>
 </body>
-
 </html>
