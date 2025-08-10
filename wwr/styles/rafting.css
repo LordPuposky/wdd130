@@ -399,6 +399,101 @@ footer a:hover {
     transform: translateX(-50%) scale(1.05);
 }
 
+/* Animaciones */
+@keyframes pop {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos para la sección */
+.adventure-levels {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.level-header {
+    margin-bottom: 40px;
+}
+
+.level-header h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent1-color);
+    font-style: italic;
+}
+
+.animate-pop {
+    animation: pop 1s ease-out;
+}
+
+.animate-float {
+    transition: transform 0.3s ease;
+}
+
+.animate-float:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.trip-card {
+    transition: all 0.3s;
+}
+
+.trip-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 15px auto 0;
+}
+
+trip-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+}
+
 .newsletter {
     max-width: 800px;
     margin: 40px auto;
@@ -732,13 +827,11 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* Estilos para la sección de comparación */
 .trip-table {
     max-width: 1000px;
     margin: 60px auto;
     padding: 0 20px;
-    overflow-x: auto; /* Para responsive en móviles */
-}
+    overflow-x: auto; }
 
 .trip-table h2 {
     color: var(--primary-color);
@@ -757,7 +850,7 @@ footer a:hover {
     margin: 15px auto 0;
 }
 
-/* Estilos para la tabla */
+/* Table Styles */
 .trip-table table {
     width: 100%;
     border-collapse: collapse;

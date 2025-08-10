@@ -32,8 +32,12 @@
         <section class="newsletter">
             <h2>Sign Up for Our Newsletter</h2>
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="user_name" placeholder="Your Name" required>
+                
+                <label for="user-email">Your Email:</label>
+                <input type="email" id="user-email" name="user_email" placeholder="Your Email" required>
+                
                 <button type="submit">Subscribe</button>
             </form>
         </section>
@@ -51,25 +55,27 @@
 
         <section class="home-grid">
             <div class="purpose">
-                <img src="images/purpose-icon.jpg" alt="Purpose icon">
-                <h3>Our Purpose</h3>
+                <img src="images/purpose-icon.jpg" alt="Mountain and river icon representing our ecological commitment">
+                <h2>Our Purpose</h2>
                 <p>To provide unforgettable rafting experiences while preserving nature.</p>
             </div>
             <div class="offerings">
-                <img src="images/offerings-icon.jpg" alt="Offerings icon">
-                <h3>What We Offer</h3>
+                <img src="images/offerings-icon.jpg" alt="Rafting adventure packages for all skill levels">
+                <h2>What We Offer</h2>
                 <p>From beginner to expert levels, we have trips for everyone.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>©2025 White Water Rafting | Yesid Romero</p>
-            <nav class="socialmedia">
-                <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Facebook" width="24" height="24"></a>
-                <a href="https://x.com"><img src="images/X.webp" alt="X" width="25" height="25"></a>
-                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram" width="28" height="28"></a>
-            </nav>  
-    </footer>
+    <p>©2025 White Water Rafting | Yesid Romero</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Visit our Facebook page" width="24"
+                    height="24"></a>
+            <a href="https://x.com"><img src="images/X.webp" alt="Visit our X profile" width="25" height="25"></a>
+            <a href="https://instagram.com"><img src="images/instagram.webp" alt="Visit our Instagram profile"
+                    width="28" height="28"></a>
+        </nav>
+</footer>
 </body>
 </html>
