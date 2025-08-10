@@ -481,7 +481,7 @@ footer a:hover {
     margin: 15px auto 0;
 }
 
-trip-card {
+.trip-card {
     background: white;
     border-radius: 10px;
     padding: 20px;
